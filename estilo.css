@@ -1,0 +1,274 @@
+@import url("https://fonts.cdnfonts.com/css/strasua");
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* estilos nav-bar*/
+.navbar-brand {
+  font-family: "Strasua", sans-serif;
+  font-size: 37px;
+  text-align: center;
+  margin-left: 14px;
+}
+
+.collapse {
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+}
+
+.collapse a {
+  font-size: 19px;
+  margin-right: 10px;
+}
+
+.navbar {
+  box-shadow: 0 0 15px black;
+  z-index: 1;
+}
+
+/* estilos-carrusel */
+.carousel-caption {
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.titulo-carrusel-1 {
+  font-family: "Strasua", sans-serif;
+  font-size: 58px;
+  color: #fff;
+}
+
+.parrafo-carrusel-1 {
+  font-size: 23px;
+  color: #fff;
+}
+
+.titulo-carrusel-2 {
+  font-family: "Strasua", sans-serif;
+  font-size: 60px;
+  color: #fff;
+}
+
+.parrafo-carrusel-2 {
+  font-size: 23px;
+  color: #fff;
+}
+
+.titulo-carrusel-3 {
+  font-family: "Strasua", sans-serif;
+  font-size: 60px;
+  color: #fff;
+}
+
+.parrafo-carrusel-3 {
+  font-size: 23px;
+  color: #fff;
+}
+
+.carousel-item {
+  height: 790px;
+}
+
+.img-carrusel {
+  object-fit: cover;
+  height: 100%;
+  filter: brightness(0.7);
+}
+
+#carouselExampleCaptions {
+  box-shadow: 0 0 15px #000;
+}
+
+/* estilos cajas */
+.contenedor-productos {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.caja1 {
+  background-image: linear-gradient(to right, #535050, #e7e6e6);
+  height: 190px;
+  width: 650px;
+}
+
+.caja1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.caja1 h3 {
+  font-size: 38px;
+  line-height: 190px;
+  text-align: center;
+  font-family: "Strasua", sans-serif;
+  text-shadow: 0 0 15px #000;
+}
+
+.caja2 {
+  background-image: linear-gradient(to left, #535050, #e7e6e6);
+  height: 190px;
+  width: 650px;
+}
+
+.caja2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.caja2 h3 {
+  font-size: 38px;
+  line-height: 190px;
+  text-align: center;
+  font-family: "Strasua", sans-serif;
+  text-shadow: 0 0 15px #000;
+}
+
+/* calzado destacado */
+.calzado-destacado {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 125px;
+}
+
+.calzado-destacado h3 {
+  margin-right: 17em;
+  font-size: 30px;
+}
+
+.calzado-destacado a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 17px;
+}
+
+.calzado {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.img-calzado {
+  width: 290px;
+  margin: 25px;
+  border-radius: 13px;
+  box-shadow: 0 0 2px #535050;
+}
+
+/* nosotros - we are baskshop */
+.nosotros {
+  padding: 37px;
+  text-align: center;
+  height: 200px;
+  background-color: #1b1a1a;
+  color: #fff;
+}
+
+.we-are {
+  font-size: 37px;
+  color: #e7e6e6;
+}
+
+.h3-dif {
+  display: inline;
+  font-family: "Strasua", sans-serif;
+  color: #e7e6e6;
+}
+
+.nosotros {
+  margin-top: 155px;
+  padding: 80px;
+  text-align: center;
+  height: 350px;
+  background-color: #1b1a1a;
+  color: #fff;
+  box-shadow: 0 0 35px #535050;
+}
+
+.nosotros p {
+  font-size: 20px;
+  margin-top: 18px;
+  color: #e7e6e6;
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  height: 350px;
+  box-shadow: 0 0 12px #000;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  margin-top: 150px;
+  font-size: 17px;
+}
+
+.contenedor-footer li {
+  list-style: none;
+  color: #535050;
+  padding: 3px;
+}
+
+.contenedor-footer a {
+  text-decoration: none;
+  color: #535050;
+}
+
+.contenedor-footer a:hover {
+  color: #e7e6e6;
+}
+
+.redes {
+  font-size: 27px;
+}
+
+.contacto-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.titulo-list-footer {
+  font-size: 27px;
+  margin-bottom: 7px;
+}
+
+.text-footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #535050;
+}
+
+/* menu de productos */
+.menu-productos {
+  margin-top: 40px;
+  background-color: #e7e6e6;
+  text-align: center;
+  height: 30px;
+}
+
+.menu-productos a {
+  text-decoration: none;
+  line-height: 30px;
+  color: #1b1a1a;
+  padding: 2px;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=estilo.css.map */
