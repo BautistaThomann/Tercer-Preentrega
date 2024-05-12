@@ -43,9 +43,12 @@ body{
     margin-right: 40px;
 }
 
-.collapse a{
-    font-size: 19px;
-    margin-right: 10px;
+.collapse{
+    a{
+        font-size: 19px;
+        margin-right: 10px;
+    }
+    
 }
 
 .navbar{
@@ -123,17 +126,23 @@ body{
     width: 650px;
 }
 
-.caja1 a{
-    text-decoration: none;
-    color: $color2;
+.caja1{
+    a{
+        text-decoration: none;
+        color: $color2;
+    }
+    
 }
 
-.caja1 h3{
-    font-size: 38px;
-    line-height: 190px;
-    text-align: center;
-    font-family: $font-titulos;
-    text-shadow: 0 0 15px $color1;
+.caja1{
+    h3{
+        font-size: 38px;
+        line-height: 190px;
+        text-align: center;
+        font-family: $font-titulos;
+        text-shadow: 0 0 15px $color1;
+    }
+    
 }
 
 .caja2{
@@ -142,17 +151,23 @@ body{
     width: 650px;
 }
 
-.caja2 a{
-    text-decoration: none;
-    color: $color2;
+.caja2{
+    a{
+        text-decoration: none;
+        color: $color2;
+    }
+    
 }
 
-.caja2 h3{
-    font-size: 38px;
-    line-height: 190px;
-    text-align: center;
-    font-family: $font-titulos;
-    text-shadow: 0 0 15px $color1;
+.caja2{
+    h3{
+        font-size: 38px;
+        line-height: 190px;
+        text-align: center;
+        font-family: $font-titulos;
+        text-shadow: 0 0 15px $color1;
+    }
+    
 }
 
 /* calzado destacado */
@@ -164,18 +179,24 @@ body{
     margin-top: 125px;
 }
 
-.calzado-destacado h3{
-    margin-right: 17em;
-    font-size: 30px;
+.calzado-destacado{
+    h3{
+        margin-right: 17em;
+        font-size: 30px;
+    }
+    
 }
 
-.calzado-destacado a{
-    text-decoration: none;
-    color: $color2;
-    background-color: $color1;
-    padding: 8px;
-    border-radius: 12px;
-    font-size: 17px;
+.calzado-destacado{
+    a{
+        text-decoration: none;
+        color: $color2;
+        background-color: $color1;
+        padding: 8px;
+        border-radius: 12px;
+        font-size: 17px;
+    }
+    
 }
 
 .calzado{
@@ -222,10 +243,13 @@ body{
     box-shadow: 0 0 35px $color3;
 }
 
-.nosotros p{
-    font-size: 20px;
-    margin-top: 18px;
-    color: $color5;
+.nosotros{
+    p{
+        font-size: 20px;
+        margin-top: 18px;
+        color: $color5;
+    }
+    
 }
 
 /* footer */
@@ -244,20 +268,26 @@ footer{
     font-size: 17px
 }
 
-.contenedor-footer li{
-    list-style: none;
-    color: $color3;
-    padding: 3px;
+.contenedor-footer{
+    li{
+        list-style: none;
+        color: $color3;
+        padding: 3px;
+    }
+    
 }
 
-.contenedor-footer a{
-    text-decoration: none;
-    color: $color3;
+.contenedor-footer{
+    a{
+        text-decoration: none;
+        color: $color3;
 
-}
+        &:hover{
+            color: $color5;
+        }
+    }
+    
 
-.contenedor-footer a:hover{
-    color: $color5;
 }
 
 .redes{
@@ -289,11 +319,202 @@ footer{
     height: 30px;
 }
 
-.menu-productos a{
-    text-decoration: none;
-    line-height: 30px;
-    color: $color4;
-    padding: 2px;
-    font-size: 18px;
+.menu-productos{
+    a{
+        text-decoration: none;
+        line-height: 30px;
+        color: $color4;
+        padding: 2px;
+        font-size: 18px;
+    }
+    
 }
+
+/* productos */
+
+.contenedor-productos-2{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(300px , 300px , 300px);
+    grid-gap: 80px;
+}
+
+.contenedor-productos{
+    img{
+        width: 382px;
+    }
+}
+
+.contenedor-zapas{
+    display: grid;
+    justify-content: center;
+}
+
+.card{
+    border: 0;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 0 0 18px $color5;
+    }
+}
+
+.card-title{
+    font-size: 25px;
+}
+
+.link-deporte{
+    text-decoration: none;
+    margin-left: 300px;
+    margin-top: 100px;
+    font-size: 20px;
+    color: $color4;
+
+    &:hover{
+        color: $color3;
+    }
+}
+
+.contenedor-link-deporte{
+    margin-top: 60px;
+    margin-bottom: 7px;
+}
+
+.link-urbano{
+    text-decoration: none;
+    margin-left: 300px;
+    margin-top: 100px;
+    font-size: 20px;
+    color: $color4;
+
+    &:hover{
+        color: $color3;
+    }
+
+}
+
+/* nuevos */
+
+.contenedor-nuevos-1{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ) ,url(./aseets/dunk-nuevo.jpg);
+    height: 950px;
+    width: 100%;
+    background-position: center;
+    h2{
+        font-size: 100px;
+        text-transform: uppercase;
+        font-family: $font-titulos;
+        padding-top: 75px;
+        padding-left: 75px;
+        text-shadow: 0 0 5px $color3;
+        color: $color1;
+        span{
+            display: block;
+            
+        }
+    }
+}
+
+.info-dunk{
+    margin-left: 82px;
+    color: $color5;
+    background-color: $color4;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 7px;
+    padding: 7px;
+    
+    &:hover{
+        color: $color2;
+    }
+}
+
+.espacio-nuevos{
+    box-shadow: 0 0 40px $color4;
+    height: 7px;
+}
+
+.contenedor-nuevos-2{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ) ,url(./aseets/jordan4-nuevos.jpg);
+    height: 950px;
+    width: 100%;
+    background-position: center;
+    box-shadow: 0 0 60px $color4;
+    h2{
+        font-size: 100px;
+        text-transform: uppercase;
+        font-family: $font-titulos;
+        padding-top: 75px;
+        padding-left: 75px;
+        color: $color2;
+        text-shadow: 0 0 50px $color1;
+        span{
+            display: block;
+        }
+    }
+}
+
+.info-jordan4{
+    @extend .info-dunk;
+    background-color: $color5;
+    color: $color4;
+    &:hover{
+        color: $color1;
+    }
+    
+}
+
+.contenedor-nuevos-3{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ) ,url(./aseets/Ja-nuevos.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 950px;
+    width: 100%;
+    background-position: center;
+    h2{
+        font-size: 100px;
+        text-transform: uppercase;
+        font-family: $font-titulos;
+        padding-top: 75px;
+        padding-left: 75px;
+        color: $color4;
+        text-shadow: 0 0 5px $color3;
+        color: $color1;
+        span{
+            display: block;
+        }
+    }
+}
+
+.info-Ja1{
+    @extend .info-dunk;
+}
+
+.proximos{
+    height: 150px;
+    width: 100%;
+    background-color: $color4;
+    text-align: center;
+    box-shadow: 0 0 15px $color4;
+    p{
+        font-size: 40px;
+        color: $color5;
+        line-height: 150px;
+    }
+}
+
+
 
