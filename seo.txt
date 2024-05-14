@@ -1,0 +1,5 @@
+1- Hago uso de las etiquetas meta: keywords, description.
+
+2- Realizo un uso correctos de las etiquetas h1, h2, h3.
+
+3- Todas las imagenes tienen un texto alternativo por si se rompen.

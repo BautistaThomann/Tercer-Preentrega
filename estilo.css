@@ -42,35 +42,13 @@ body {
   margin-bottom: 30px;
 }
 
-.titulo-carrusel-1 {
-  font-family: "Strasua", sans-serif;
-  font-size: 58px;
-  color: #fff;
-}
-
-.parrafo-carrusel-1 {
-  font-size: 23px;
-  color: #fff;
-}
-
-.titulo-carrusel-2 {
+.titulo-carrusel-1, .titulo-carrusel-3, .titulo-carrusel-2 {
   font-family: "Strasua", sans-serif;
   font-size: 60px;
   color: #fff;
 }
 
-.parrafo-carrusel-2 {
-  font-size: 23px;
-  color: #fff;
-}
-
-.titulo-carrusel-3 {
-  font-family: "Strasua", sans-serif;
-  font-size: 60px;
-  color: #fff;
-}
-
-.parrafo-carrusel-3 {
+.parrafo-carrusel-1, .parrafo-carrusel-3, .parrafo-carrusel-2 {
   font-size: 23px;
   color: #fff;
 }
@@ -80,7 +58,8 @@ body {
 }
 
 .img-carrusel {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   filter: brightness(0.7);
 }
@@ -300,6 +279,10 @@ footer {
   font-size: 25px;
 }
 
+.card-text {
+  color: #535050;
+}
+
 .link-deporte {
   text-decoration: none;
   margin-left: 300px;
@@ -329,7 +312,7 @@ footer {
 
 /* nuevos */
 .contenedor-nuevos-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./aseets/dunk-nuevo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../aseets/dunk-nuevo.jpg);
   height: 950px;
   width: 100%;
   background-position: center;
@@ -368,7 +351,7 @@ footer {
 }
 
 .contenedor-nuevos-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./aseets/jordan4-nuevos.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../aseets/jordan4-nuevos.jpg);
   height: 950px;
   width: 100%;
   background-position: center;
@@ -396,7 +379,7 @@ footer {
 }
 
 .contenedor-nuevos-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./aseets/Ja-nuevos.avif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../aseets/Ja-nuevos.avif);
   background-repeat: no-repeat;
   background-size: cover;
   height: 950px;
@@ -430,4 +413,113 @@ footer {
   line-height: 150px;
 }
 
-/*# sourceMappingURL=estilo.css.map */
+/* segundo carrusel */
+.titulo-carrusel2 {
+  font-size: 70px;
+  text-shadow: 0 0 10px #1b1a1a;
+}
+
+.parrafo-carrusel2 {
+  font-size: 30px;
+  text-shadow: 0 0 10px #1b1a1a;
+}
+
+.jordan1 {
+  width: 100%;
+  filter: brightness(0.6);
+}
+
+/* contenedor jordan */
+.contenedor-1-jordan {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 85px;
+}
+.contenedor-1-jordan h3 {
+  font-size: 27px;
+  margin-top: 7px;
+}
+.contenedor-1-jordan p {
+  font-size: 19px;
+  margin-top: 17px;
+}
+
+.zapa-jordan {
+  width: 350px;
+}
+
+/* contacto */
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: 60px;
+}
+.formulario form {
+  width: 400px;
+  background-color: rgba(162, 152, 152, 0.125);
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(176, 168, 168, 0.504);
+}
+.formulario form h3 {
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+input {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.584);
+  padding: 18px 18px;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 300px;
+  border: 0;
+  border-radius: 15px;
+}
+
+.enviar {
+  height: 35px;
+  background-color: #e7e6e6;
+  color: #000;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding-top: 8px;
+  font-size: 15px;
+}
+.enviar:hover {
+  background-color: #535050;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.contacto .text-contacto {
+  margin-top: 30px;
+}
+.contacto .text-contacto h3 {
+  font-size: 27px;
+}
+.contacto .text-contacto .ul-telefono {
+  list-style: none;
+  padding-top: 7px;
+}
+.contacto .text-contacto .ul-telefono li {
+  font-size: 20px;
+  padding: 5px;
+}
+.contacto .text-contacto .ul-redes {
+  list-style: none;
+  display: flex;
+}
+.contacto .text-contacto .ul-redes a {
+  color: #000;
+  text-decoration: none;
+  font-size: 40px;
+  letter-spacing: 40px;
+}/*# sourceMappingURL=estilo.css.map */
