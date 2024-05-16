@@ -9,6 +9,9 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- fin cdnjs -->
+    <!-- linkeo aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fin linkeo aos -->
     <!-- linkeo bs -->
     <meta name="keywords" content="básquet, jordan, air, dunk, deporte">
     <meta name="description" content="Somos Baskshop, una página espacializada en calzado de básquet y moda, tenemos lo mas reciente del mercado y mucho más.">
@@ -16,7 +19,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <!-- fin linkeo bs -->
     <link rel="shortcut icon" href="../aseets/logo-pag.png" type="image/x-icon">
-    <link rel="stylesheet" href="../estilo.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
     <title>Nuevos - Baskshop</title>
 </head>
 
@@ -65,18 +68,18 @@
 
     <main>
         <div class="contenedor-nuevos-1">
-            <h2>Nike<span>Dunk</span></h2>
-            <a class="info-dunk" href="../pages/productos.html">Más info</a>
+            <h2 data-aos="fade-right">Nike<span>Dunk</span></h2>
+            <a class="info-dunk" href="../pages/productos.html" data-aos="fade-right">Más info</a>
         </div>
         <div class="espacio-nuevos"></div>
         <div class="contenedor-nuevos-2">
-            <h2>Air<span>Jordan 4</span></h2>
-            <a class="info-jordan4" href="../pages/productos.html">Más info</a>
+            <h2 data-aos="fade-left">Air<span>Jordan 4</span></h2>
+            <a class="info-jordan4" href="../pages/productos.html" data-aos="fade-left">Más info</a>
         </div>
         <div class="espacio-nuevos"></div>
         <div class="contenedor-nuevos-3">
-            <h2>Ja 1<span>"Lunar New Year"</span></h2>
-            <a class="info-Ja1" href="../pages/productos.html">Más info</a>
+            <h2 data-aos="fade-right">Ja 1<span>"Lunar New Year"</span></h2>
+            <a class="info-Ja1" href="../pages/productos.html" data-aos="fade-right">Más info</a>
         </div>
         <div class="proximos">
             <p>Nuevos ingresos próximamente...</p>
@@ -134,6 +137,13 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <!-- fin parte de bs -->
+    <!-- parte de aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- fin parte de aos -->
+
 </body>
 
 </html>

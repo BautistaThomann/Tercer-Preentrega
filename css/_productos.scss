@@ -1,0 +1,203 @@
+@import url('https://fonts.cdnfonts.com/css/strasua');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+// variables
+
+// fuentes
+$font-titulos: 'Strasua', sans-serif;
+$font-sub-text: 'Helvetica Neue', sans-serif;
+$font-cajas: "Permanent Marker", cursive;
+
+// paleta de colores
+$color1: #000;
+$color2: #fff;
+$color3: #535050;
+$color4: #1b1a1a;
+$color5: #e7e6e6;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-sub-text;
+}
+
+
+/* estilos nav-bar*/
+
+.navbar-brand {
+    font-family: $font-titulos;
+    font-size: 37px;
+    text-align: center;
+    margin-left: 14px;
+}
+
+
+.collapse{
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+}
+
+.collapse{
+    a{
+        font-size: 19px;
+        margin-right: 10px;
+    }
+    
+}
+
+.navbar{
+    box-shadow: 0 0 15px black;
+    z-index: 1;
+}
+
+/* menu de productos */
+
+.menu-productos{
+    margin-top: 40px;
+    background-color: $color5;
+    text-align: center;
+    height: 30px;
+}
+
+.menu-productos{
+    a{
+        text-decoration: none;
+        line-height: 30px;
+        color: $color4;
+        padding: 2px;
+        font-size: 18px;
+    }
+    
+}
+
+/* productos */
+
+.contenedor-productos-2{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(300px , 300px , 300px);
+    grid-gap: 80px;
+}
+
+.contenedor-productos{
+    img{
+        width: 382px;
+    }
+}
+
+.contenedor-zapas{
+    display: grid;
+    justify-content: center;
+}
+
+.card{
+    border: 0;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 0 0 18px $color5;
+        
+    }
+    
+}
+
+.card-title{
+    font-size: 25px;
+}
+
+.card-text{
+    color: $color3;
+}
+
+.link-deporte{
+    text-decoration: none;
+    margin-left: 300px;
+    margin-top: 100px;
+    font-size: 20px;
+    color: $color4;
+
+    &:hover{
+        color: $color3;
+    }
+}
+
+.contenedor-link-deporte{
+    margin-top: 60px;
+    margin-bottom: 7px;
+}
+
+.link-urbano{
+    text-decoration: none;
+    margin-left: 300px;
+    margin-top: 100px;
+    font-size: 20px;
+    color: $color4;
+
+    &:hover{
+        color: $color3;
+    }
+
+}
+
+/* footer */
+
+footer{
+    background-color: $color1;
+    height: 350px;
+    box-shadow: 0 0 12px $color1;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    margin-top: 150px;
+    font-size: 17px
+}
+
+.contenedor-footer{
+    li{
+        list-style: none;
+        color: $color3;
+        padding: 3px;
+    }
+    
+}
+
+.contenedor-footer{
+    a{
+        text-decoration: none;
+        color: $color3;
+        &:hover{
+            color: $color5;
+        }
+    }
+    
+
+}
+
+.redes{
+    font-size: 27px;
+}
+
+.contacto-icon{
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.titulo-list-footer{
+    font-size: 27px;
+    margin-bottom: 7px;
+}
+
+.text-footer{
+    text-align: center;
+    margin-top: 40px;
+    color: $color3
+}

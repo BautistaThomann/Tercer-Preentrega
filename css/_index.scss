@@ -1,0 +1,304 @@
+@import url('https://fonts.cdnfonts.com/css/strasua');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+// variables
+
+// fuentes
+$font-titulos: 'Strasua', sans-serif;
+$font-sub-text: 'Helvetica Neue', sans-serif;
+$font-cajas: "Permanent Marker", cursive;
+
+// paleta de colores
+$color1: #000;
+$color2: #fff;
+$color3: #535050;
+$color4: #1b1a1a;
+$color5: #e7e6e6;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-sub-text;
+}
+
+
+/* estilos nav-bar*/
+
+.navbar-brand {
+    font-family: $font-titulos;
+    font-size: 37px;
+    text-align: center;
+    margin-left: 14px;
+}
+
+
+.collapse{
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+}
+
+.collapse{
+    a{
+        font-size: 19px;
+        margin-right: 10px;
+    }
+    
+}
+
+.navbar{
+    box-shadow: 0 0 15px black;
+    z-index: 1;
+}
+
+/* estilos-carrusel */
+
+.carousel-caption{
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.titulo-carrusel-1{
+    font-family: $font-titulos;
+    font-size: 60px;
+    color: $color2;
+}
+
+.parrafo-carrusel-1{
+    font-size: 23px;
+    color: $color2;
+
+}
+
+.titulo-carrusel-2{
+    @extend .titulo-carrusel-1;
+    
+}
+
+.parrafo-carrusel-2{
+    @extend .parrafo-carrusel-1;
+}
+
+.titulo-carrusel-3{
+    @extend .titulo-carrusel-1;
+    
+}
+
+.parrafo-carrusel-3{
+    @extend .parrafo-carrusel-1;
+}
+
+.carousel-item{
+    height: 790px;
+}
+
+.img-carrusel{
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(0.7);
+}
+
+#carouselExampleCaptions{
+    box-shadow: 0 0 15px $color1;
+}
+
+/* estilos cajas */
+
+.contenedor-productos{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.caja1{
+    background-image: linear-gradient(to right , $color3 , $color5);
+    height: 190px;
+    width: 650px;
+}
+
+.caja1{
+    a{
+        text-decoration: none;
+        color: $color2;
+    }
+    
+}
+
+.caja1{
+    h3{
+        font-size: 38px;
+        line-height: 190px;
+        text-align: center;
+        font-family: $font-titulos;
+        text-shadow: 0 0 15px $color1;
+    }
+    
+}
+
+.caja2{
+    background-image: linear-gradient(to left , $color3 , $color5);
+    height: 190px;
+    width: 650px;
+}
+
+.caja2{
+    a{
+        text-decoration: none;
+        color: $color2;
+    }
+    
+}
+
+.caja2{
+    h3{
+        font-size: 38px;
+        line-height: 190px;
+        text-align: center;
+        font-family: $font-titulos;
+        text-shadow: 0 0 15px $color1;
+    }
+    
+}
+
+/* calzado destacado */
+
+.calzado-destacado{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 125px;
+}
+
+.calzado-destacado{
+    h3{
+        margin-right: 17em;
+        font-size: 30px;
+    }
+    
+}
+
+.calzado-destacado{
+    a{
+        text-decoration: none;
+        color: $color2;
+        background-color: $color1;
+        padding: 8px;
+        border-radius: 12px;
+        font-size: 17px;
+    }
+    
+}
+
+.calzado{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.img-calzado{
+    width: 290px;
+    margin: 25px;
+    border-radius: 13px;
+    box-shadow: 0 0 2px $color3;
+}
+
+/* nosotros - we are baskshop */
+
+.nosotros{
+    padding: 37px;
+    text-align: center;
+    height: 200px;
+    background-color: $color4;
+    color: $color2;
+}
+
+.we-are{
+    font-size: 37px;
+    color: $color5;
+}
+
+.h3-dif{
+    display: inline;
+    font-family: $font-titulos;
+    color: $color5;
+}
+
+.nosotros{
+    margin-top: 155px;
+    padding: 80px;
+    text-align: center;
+    height: 350px;
+    background-color: $color4;
+    color: $color2;
+    box-shadow: 0 0 35px $color3;
+}
+
+.nosotros{
+    p{
+        font-size: 20px;
+        margin-top: 18px;
+        color: $color5;
+    }
+    
+}
+
+/* footer */
+
+footer{
+    background-color: $color1;
+    height: 350px;
+    box-shadow: 0 0 12px $color1;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    margin-top: 150px;
+    font-size: 17px
+}
+
+.contenedor-footer{
+    li{
+        list-style: none;
+        color: $color3;
+        padding: 3px;
+    }
+    
+}
+
+.contenedor-footer{
+    a{
+        text-decoration: none;
+        color: $color3;
+        &:hover{
+            color: $color5;
+        }
+    }
+    
+
+}
+
+.redes{
+    font-size: 27px;
+}
+
+.contacto-icon{
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.titulo-list-footer{
+    font-size: 27px;
+    margin-bottom: 7px;
+}
+
+.text-footer{
+    text-align: center;
+    margin-top: 40px;
+    color: $color3
+}
