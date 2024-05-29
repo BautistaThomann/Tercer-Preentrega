@@ -4,37 +4,3 @@
 @import "_jordan";
 @import "_contacto";
 @import "_mediaqueris";
-
-@import url('https://fonts.cdnfonts.com/css/strasua');
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
-
-// variables
-
-// fuentes
-$font-titulos: 'Strasua', sans-serif;
-$font-sub-text: 'Helvetica Neue', sans-serif;
-$font-cajas: "Permanent Marker", cursive;
-
-// paleta de colores
-$color1: #000;
-$color2: #fff;
-$color3: #535050;
-$color4: #1b1a1a;
-$color5: #e7e6e6;
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: $font-sub-text;
-}
-
-
-
-
-
-
-

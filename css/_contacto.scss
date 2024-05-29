@@ -2,7 +2,6 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 // variables
-
 // fuentes
 $font-titulos: 'Strasua', sans-serif;
 $font-sub-text: 'Helvetica Neue', sans-serif;
@@ -25,16 +24,13 @@ body{
     font-family: $font-sub-text;
 }
 
-
 /* estilos nav-bar*/
-
 .navbar-brand {
     font-family: $font-titulos;
     font-size: 37px;
     text-align: center;
     margin-left: 14px;
 }
-
 
 .collapse{
     display: flex;
@@ -47,7 +43,6 @@ body{
         font-size: 19px;
         margin-right: 10px;
     }
-    
 }
 
 .navbar{
@@ -56,9 +51,7 @@ body{
 }
 
 /* contacto */
-
 // formulario
-
 .formulario{
     display: flex;
     justify-content: center;
@@ -90,8 +83,6 @@ input{
     width: 200px;
     border: 0;
     border-radius: 15px;
-    
-
 }
 
 .enviar{
@@ -104,9 +95,7 @@ input{
     font-size: 15px;
     &:hover{
         background-color: $color3;
-
     }
-    
 }
 
 .contacto{
@@ -136,16 +125,10 @@ input{
                 letter-spacing: 40px;
             }
         }
-
     }
 }
 
-
-
-
-
 /* footer */
-
 footer{
     background-color: $color1;
     height: 350px;
@@ -177,8 +160,6 @@ footer{
             color: $color5;
         }
     }
-    
-
 }
 
 .redes{

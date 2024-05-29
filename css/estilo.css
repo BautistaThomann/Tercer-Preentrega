@@ -10,8 +10,6 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 @import url("https://fonts.cdnfonts.com/css/strasua");
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
-@import url("https://fonts.cdnfonts.com/css/strasua");
-@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +18,7 @@
 
 body {
   font-family: "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
 }
 
 /* estilos nav-bar*/
@@ -326,14 +325,14 @@ body {
   color: #535050;
 }
 
-.link-deporte {
+.link-deporte, .link-urbano {
   text-decoration: none;
-  margin-left: 300px;
+  margin-left: 270px;
   margin-top: 100px;
   font-size: 20px;
   color: #1b1a1a;
 }
-.link-deporte:hover {
+.link-deporte:hover, .link-urbano:hover {
   color: #535050;
 }
 
@@ -342,13 +341,6 @@ body {
   margin-bottom: 7px;
 }
 
-.link-urbano {
-  text-decoration: none;
-  margin-left: 300px;
-  margin-top: 100px;
-  font-size: 20px;
-  color: #1b1a1a;
-}
 .link-urbano:hover {
   color: #535050;
 }
@@ -878,83 +870,32 @@ body {
 }
 
 /* media queris */
-@media (max-width: 850px) {
-  .contacto {
+@media (max-width: 1200px) {
+  .contenedor-productos-2 {
     display: block;
-  }
-}
-@media (max-width: 850px) {
-  .text-contacto {
-    text-align: center;
-  }
-}
-@media (max-width: 850px) {
-  .contenedor-nuevos-1 h2 {
-    font-size: 70px;
-  }
-}
-@media (max-width: 850px) {
-  .contenedor-nuevos-1 a {
-    font-size: 17px;
-  }
-}
-@media (max-width: 850px) {
-  .contenedor-nuevos-2 h2 {
-    font-size: 70px;
-  }
-}
-@media (max-width: 850px) {
-  .contenedor-nuevos-2 a {
-    font-size: 17px;
-  }
-}
-@media (max-width: 850px) {
-  .contenedor-nuevos-3 h2 {
-    font-size: 70px;
-  }
-}
-@media (max-width: 850px) {
-  .contenedor-nuevos-3 a {
-    font-size: 17px;
-  }
-}
-@media (max-width: 850px) {
-  .proximos p {
-    font-size: 20px;
-  }
-}
-@media (max-width: 900px) {
-  .titulo-carrusel2 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .parrafo-carrusel2 {
-    font-size: 18px;
-    text-align: center;
-  }
-}
-@media (max-width: 770px) {
-  .titulo-carrusel-2 {
-    font-size: 25px;
-  }
-  .parrafo-carrusel2 {
-    font-size: 16px;
   }
 }
 @media (max-width: 1160px) {
   .contenedor-1-jordan {
     display: block;
-    margin-left: 50px;
   }
-}
-@media (max-width: 1160px) {
   .card-img-top {
     object-fit: cover;
   }
 }
-@media (max-width: 1200px) {
-  .contenedor-productos-2 {
+@media (max-width: 950px) {
+  .calzado-destacado {
     display: block;
+  }
+  .we-are {
+    font-size: 25px;
+  }
+  .nosotros {
+    height: auto;
+  }
+  .calzado {
+    display: block;
+    margin-left: 80px;
   }
 }
 @media (max-width: 900px) {
@@ -982,35 +923,90 @@ body {
     font-size: 17px;
     text-align: center;
   }
-}
-@media (max-width: 950px) {
-  .calzado-destacado {
-    display: block;
-    padding-left: 90px;
+  .caja1-a {
+    font-size: 30px;
+  }
+  .caja2-a {
+    font-size: 30px;
+  }
+  .titulo-carrusel2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .parrafo-carrusel2 {
+    font-size: 18px;
+    text-align: center;
   }
 }
-@media (max-width: 950px) {
-  .calzado {
+@media (max-width: 850px) {
+  .contenedor-nuevos-1 h2 {
+    font-size: 70px;
+  }
+  .contenedor-nuevos-1 a {
+    font-size: 17px;
+  }
+  .contenedor-nuevos-2 h2 {
+    font-size: 70px;
+  }
+  .contenedor-nuevos-2 a {
+    font-size: 17px;
+  }
+  .contenedor-nuevos-3 h2 {
+    font-size: 70px;
+  }
+  .contenedor-nuevos-3 a {
+    font-size: 17px;
+  }
+  .proximos p {
+    font-size: 20px;
+  }
+  .contacto {
     display: block;
-    margin-left: 75px;
+  }
+  .text-contacto {
+    text-align: center;
+  }
+  .ul-redes {
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    margin-right: 57px;
   }
 }
-@media (max-width: 950px) {
-  .we-are {
+@media (max-width: 770px) {
+  .titulo-carrusel-2 {
     font-size: 25px;
   }
-  .nosotros {
-    height: auto;
+  .parrafo-carrusel2 {
+    font-size: 16px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media (max-width: 650px) {
+  .text-footer {
+    font-size: 10px;
+  }
+  .titulo-list-footer {
+    font-size: 16px;
+  }
+  .redes {
+    font-size: 17px;
+  }
+  .contacto-icon-2 {
+    font-size: 15px;
+  }
+  .cont-sec-footer {
+    font-size: 10px;
+  }
 }
-
-body {
-  font-family: "Helvetica Neue", sans-serif;
+@media (max-width: 500px) {
+  .calzado {
+    margin: 0;
+  }
+  .calzado-destacado {
+    margin: 0;
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

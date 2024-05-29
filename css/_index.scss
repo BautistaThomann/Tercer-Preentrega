@@ -2,7 +2,6 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 // variables
-
 // fuentes
 $font-titulos: 'Strasua', sans-serif;
 $font-sub-text: 'Helvetica Neue', sans-serif;
@@ -23,18 +22,17 @@ $color5: #e7e6e6;
 
 body{
     font-family: $font-sub-text;
+    overflow-x: hidden;
 }
 
 
 /* estilos nav-bar*/
-
 .navbar-brand {
     font-family: $font-titulos;
     font-size: 37px;
     text-align: center;
     margin-left: 14px;
 }
-
 
 .collapse{
     display: flex;
@@ -56,7 +54,6 @@ body{
 }
 
 /* estilos-carrusel */
-
 .carousel-caption{
     text-align: start;
     margin-bottom: 30px;
@@ -71,12 +68,10 @@ body{
 .parrafo-carrusel-1{
     font-size: 23px;
     color: $color2;
-
 }
 
 .titulo-carrusel-2{
     @extend .titulo-carrusel-1;
-    
 }
 
 .parrafo-carrusel-2{
@@ -85,7 +80,6 @@ body{
 
 .titulo-carrusel-3{
     @extend .titulo-carrusel-1;
-    
 }
 
 .parrafo-carrusel-3{
@@ -107,7 +101,6 @@ body{
 }
 
 /* estilos cajas */
-
 .contenedor-productos{
     margin-top: 90px;
     display: flex;
@@ -125,7 +118,6 @@ body{
         text-decoration: none;
         color: $color2;
     }
-    
 }
 
 .caja1{
@@ -136,7 +128,6 @@ body{
         font-family: $font-titulos;
         text-shadow: 0 0 15px $color1;
     }
-    
 }
 
 .caja2{
@@ -150,7 +141,6 @@ body{
         text-decoration: none;
         color: $color2;
     }
-    
 }
 
 .caja2{
@@ -161,11 +151,9 @@ body{
         font-family: $font-titulos;
         text-shadow: 0 0 15px $color1;
     }
-    
 }
 
 /* calzado destacado */
-
 .calzado-destacado{
     display: flex;
     align-items: center;
@@ -178,7 +166,6 @@ body{
         margin-right: 17em;
         font-size: 30px;
     }
-    
 }
 
 .calzado-destacado{
@@ -190,7 +177,6 @@ body{
         border-radius: 12px;
         font-size: 17px;
     }
-    
 }
 
 .calzado{
@@ -207,7 +193,6 @@ body{
 }
 
 /* nosotros - we are baskshop */
-
 .nosotros{
     padding: 37px;
     text-align: center;
@@ -243,11 +228,9 @@ body{
         margin-top: 18px;
         color: $color5;
     }
-    
 }
 
 /* footer */
-
 footer{
     background-color: $color1;
     height: 350px;
@@ -268,7 +251,6 @@ footer{
         color: $color3;
         padding: 3px;
     }
-    
 }
 
 .contenedor-footer{
@@ -279,8 +261,6 @@ footer{
             color: $color5;
         }
     }
-    
-
 }
 
 .redes{
